@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let KG = parseInt(prompt("Moi ban nhap can nang"));
+    let M = parseInt(prompt("Moi ban nhap chieu cao"));
+    let BMI = KG/(M * M);
+    if (BMI < 18)
+        document.write("Underweight");
+    else if (BMI < 25.0)
+        document.write("Normal");
+    else if (BMI < 30.0)
+        document.write("Overweight");
+    else
+        document.write("Obese");
+</script>
+</body>
+</html>

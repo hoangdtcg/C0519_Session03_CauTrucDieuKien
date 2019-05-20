@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type = "text" id = "numberOne" placeholder="a">
+<input type = "text" id = "numberTwo" placeholder="b">
+<button onclick = "phuongtrinhbac1()"> submit</button>
+
+<script>
+    function phuongtrinhbac1() {
+        let a = parseInt(document.getElementById("numberOne").value);
+        let b = parseInt(document.getElementById("numberTwo").value);
+        let c = '';
+        if (a !== 0) {
+            b = "Phuong trinh co nghiem duy nhat " + (-b / a);
+        } else {
+            if (b === 0) {
+                b = "Phuong trinh vo so nghiem";
+            } else {
+                b = "Phuong trinh vo nghiem";
+            }
+        }
+        let output = b.fontcolor("red");
+        document.getElementById("pt").innerHTML = output;
+    }
+</script>
+<p id = "pt"></p>
+</body>
+</html>
