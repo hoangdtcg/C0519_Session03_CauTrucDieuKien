@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NgayThang</title>
+</head>
+<body>
+           <p><h1>KIỂM TRA NGÀY THÁNG</h1></p>
+
+           <input id="thang" type="number" value="">
+           <button type="button" onclick="xemsongay()">Xemsongay</button>
+<script>
+          function xemsongay() {
+              let a = parseInt(document.getElementById("thang").value);
+              switch (a) {
+                  case 1:
+                  case 3:
+                  case 5:
+                  case 7:
+                  case 8:
+                  case 10:
+                  case 12:
+                      document.write("co 31 ngay");
+                  break ;
+                  case 2:
+                      document.write("co 28 hoac 29 ngay");
+                  break ;
+                  default:
+                      document.write("co 30 ngay");
+                      break ;
+              }
+          }
+</script>
+</body>
+</html>
