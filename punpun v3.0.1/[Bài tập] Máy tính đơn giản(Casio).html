@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    button{width: 50px;height: 50px;}
+</style>
+<body style="font-family: 'Courier'">
+<form style="background-color: slategray; border: black; border-style: solid;width: 220px;text-align: center" >
+    <h style="font-family: 'Courier'; color: honeydew">CASIO fx250</h><br>
+    <label for="box"></label><input id="box" style="width:208px;height: 40px;text-align: right">
+    <table border-style="solid">
+        <tr>
+            <th><button type="button" onclick="number(this.value)" value="1">1</button></th>
+            <th><button type="button" onclick="number(this.value)" value="2">2</button></th>
+            <th><button type="button" onclick="number(this.value)" value="3">3</button></th>
+            <th><button type="button" onclick="number(this.value)" value="+">+</button></th>
+        </tr>
+        <tr>
+            <th><button type="button" onclick="number(this.value)" value="4">4</button></th>
+            <th><button type="button" onclick="number(this.value)" value="5">5</button></th>
+            <th><button type="button" onclick="number(this.value)" value="6">6</button></th>
+            <th><button type="button" onclick="number(this.value)" value="-">-</button></th>
+        </tr>
+        <tr>
+            <th><button type="button" onclick="number(this.value)" value="7">7</button></th>
+            <th><button type="button" onclick="number(this.value)" value="8">8</button></th>
+            <th><button type="button" onclick="number(this.value)" value="9">9</button></th>
+            <th><button type="button" onclick="number(this.value)" value="*">x</button></th>
+        </tr>
+        <tr>
+            <th><button type="button" onclick="number(this.value)" value="reset">C</button></th>
+            <th><button type="button" onclick="number(this.value)" value="0">0</button></th>
+            <th><button type="button" onclick="summath()" value="confirm">=</button></th>
+            <th><button type="button" onclick="number(this.value)" value="/">/</button></th>
+        </tr>
+    </table>
+    <script src="bt3.3(calc).js"></script>
+</form>
+</body>
+</html>
