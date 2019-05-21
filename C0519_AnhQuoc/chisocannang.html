@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chisocannang</title>
+</head>
+<body>
+<form>
+    So can nang<br>
+    <input type="text" id="cannang"><br><br>
+    Chieu cao<br>
+    <input type="text" id="chieucao"><br><br>
+    <button type="button" onclick="ketqua()">submit</button>
+    <input id="Result" type="text">
+    <script>
+        function ketqua() {
+            let a = document.getElementById("cannang").value;
+            let b = document.getElementById("chieucao").value;
+            c = a/(b*b);
+            if (c < 18.5)
+                document.getElementById("Result").value="Underweight"
+            else if (c < 25)
+                document.getElementById("Result").value="Nomal"
+            else if (c < 30)
+                document.getElementById("Result").value="Overweight"
+            else
+                document.getElementById("Result").value="Obese"
+        }
+    </script>
+</form>
+</body>
+</html>

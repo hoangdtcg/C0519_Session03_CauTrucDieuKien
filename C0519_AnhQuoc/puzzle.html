@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzle</title>
+</head>
+<body>
+<img src="anh03/chuot.jpg" height="145" width="220" onclick="doiAnh()" id="mouse"/><br>
+<img src="anh03/chuot.jpg" height="145" width="220" onclick="doiAnh1()" id="mouse1"/><br>
+<img src="anh03/chuot.jpg" height="145" width="220" onclick="doiAnh2()" id="mouse2"/>
+<script>
+    let name = "chuot";
+    function doiAnh() {
+        document.getElementById("mouse").src = "sutu";
+        if (name === "chuot") {
+            name = "sutu"
+        } else if (name === "sutu") {
+            name = "meo"
+        } else if (name === "meo") {
+            name = "chuot"
+        }
+        document.getElementById("mouse").src = "anh03/" + name + ".jpg";
+        check();
+    }
+    let name1 = "chuot";
+    function doiAnh1() {
+        document.getElementById("mouse1").src = "sutu";
+        if (name1 === "chuot") {
+            name1 = "sutu"
+        } else if (name1 === "sutu") {
+            name1 = "meo"
+        } else if (name1 === "meo") {
+            name1 = "chuot"
+        }
+        document.getElementById("mouse1").src = "anh03/" + name1 + ".jpg";
+        check();
+    }
+    let name2 = "chuot";
+    function doiAnh2() {
+        document.getElementById("mouse2").src = "sutu";
+        if (name2 === "chuot") {
+            name2 = "sutu"
+        } else if (name2 === "sutu") {
+            name2 = "meo"
+        } else if (name2 === "meo") {
+            name2 = "chuot"
+        }
+        document.getElementById("mouse2").src = "anh03/" + name2 + ".jpg";
+        check();
+    }
+    function check() {
+        if (name === name1 && name1 === name2)
+            alert("chinh xac");
+    }
+</script>
+</body>
+</html>
