@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim so lon nhat trong 3 so</title>
+</head>
+<body>
+    <input type="text" placeholder="nhap a" id="so a">
+    <input type="text" placeholder="nhap b" id="so b">
+    <input type="text" placeholder="nhap c" id="so c">
+    <button type="submit" onclick="ketqua()">ket qua</button>
+    <input type="text" id="result">
+    <script>
+        function ketqua() {
+            let a = parseFloat(document.getElementById("so a").value);
+            let b = parseFloat(document.getElementById("so b").value);
+            let c = parseFloat(document.getElementById("so c").value);
+            if (a > b) {
+                if (a > c) {
+                    document.getElementById("result").value= "a la so lon nhat";
+                } else {
+                    document.getElementById("result").value= "c la so lon nhat";
+                }
+            } else {
+                if (b > c) {
+                    document.getElementById("result").value= "b la so lon nhat";
+                } else {
+                    document.getElementById("result").value= "c la so lon nhat";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

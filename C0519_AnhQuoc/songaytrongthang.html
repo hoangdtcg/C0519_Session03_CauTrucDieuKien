@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>songaytrongthang</title>
+</head>
+<body>
+<form>
+    <input type="text" id="sothang" placeholder="nhap so thang">
+    <button type="button" onclick="songay()">tinh so ngay</button>
+    <input id="ketqua" type="text">
+    <script>
+        function songay() {
+            let a = parseInt(document.getElementById("sothang").value);
+            switch (thang = a) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    document.getElementById("ketqua").value="Thang co 31 ngay";
+                    break;
+                case 2:
+                    document.getElementById("ketqua").value="Thang co 28 hoac 29 ngay"
+                    break;
+                default:
+                    document.getElementById("ketqua").value="Thang co 30 ngay";
+                    break;
+            }
+        }
+    </script>
+</form>
+</body>
+</html>

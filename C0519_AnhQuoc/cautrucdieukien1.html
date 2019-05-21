@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau truc dieu kien 1</title>
+</head>
+<body>
+<div>
+    <input type="text" id="so a" placeholder="nhap so a">
+    <input type="text" id="so b" placeholder="nhap so b"><br><br>
+    <button type="submit" onclick="chiahet()">ket qua</button>
+    <input type="text" id="result">
+<script>
+    function chiahet() {
+        let a = document.getElementById("so a").value;
+        let b = document.getElementById("so b").value;
+        if (a%b == 0)
+            document.getElementById("result").value = " a chia het cho b";
+        else
+            document.getElementById("result").value = " a khong chia het cho b";
+    }
+</script>
+</div>
+</body>
+</html>

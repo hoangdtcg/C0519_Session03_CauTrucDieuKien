@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh so tuoi thi vao lop 10</title>
+</head>
+<body>
+<div>
+    <input type="text" id="so tuoi" placeholder="nhap so tuoi"><br><br>
+    <button type="submit" onclick="hocsinh()">ket qua</button>
+    <input type="text" id="result">
+    <script>
+        function hocsinh() {
+            let a = parseInt(document.getElementById("so tuoi").value);
+            if (a >= 16)
+                document.getElementById("result").value = " du tuoi thi vao lop 10";
+            else
+                document.getElementById("result").value = " khong du tuoi thi vao lop 10";
+        }
+    </script>
+</div>
+</body>
+</html>
