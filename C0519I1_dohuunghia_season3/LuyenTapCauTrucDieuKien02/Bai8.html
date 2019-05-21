@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type = "text" id = "age">
+<button onclick= "checkAge()">Check</button>
+<script>
+    function checkAge() {
+        let a = parseInt(document.getElementById("age").value);
+        let b = '';
+        if (a > 0 && a <= 120){
+            b = "So " + a + " la tuoi cua mot nguoi";
+        } else {
+            b = "So " + a + " khong la tuoi cua mot nguoi";
+        }
+        let output = b.fontcolor("red");
+        document.getElementById("age1").innerHTML = output;
+    }
+
+</script>
+<p id = "age1"></p>
+</body>
+</html>
