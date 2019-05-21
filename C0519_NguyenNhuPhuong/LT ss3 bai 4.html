@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim gia tri lon nhat khi nhap 3 so</title>
+</head>
+<body>
+
+<input id="number1"><br/>
+<input id="number2"><br/>
+<input id="number3"><br/>
+<button type="button" onclick="submit()"> Submit</button>
+<script>
+    function submit() {
+        let number1 = parseInt(document.getElementById("number1").value);
+        let number2 = parseInt(document.getElementById("number2").value);
+        let number3 = parseInt(document.getElementById("number3").value);
+        if (number1 > number2 && number1 > number3) {
+            document.write(number1 + "max");
+        } else if (number2 > number1 && number2 > number3) {
+            document.write(number2 + "max");
+        } else {
+            document.write(number3 + "max");
+        }
+    }
+
+
+</script>
+</body>
+</html>

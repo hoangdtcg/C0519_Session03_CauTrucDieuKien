@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1> Tinh hoa hong</h1>
+<body>
+<input id="doanhso">
+<button id="hoa hong nhan dc" onclick="hoahong()"> Xem</button>
+<script>
+    function hoahong() {
+        let doanhso = parseInt(document.getElementById("doanhso").value);
+        let   tienhoahong =0;
+        if (doanhso > 100000) {
+            tienhoahong = (doanhso * 10) / 100;
+
+        } else if (doanhso > 80000) {
+             tienhoahong = (doanhso * 9) / 100;
+        } else if (doanhso > 60000) {
+             tienhoahong = (doanhso * 8) / 100;
+        } else {
+             tienhoahong = (doanhso * 7) / 100;
+        }
+        document.write("tien hoa hoang la" + tienhoahong);
+    }
+</script>
+
+
+</body>
+</html>

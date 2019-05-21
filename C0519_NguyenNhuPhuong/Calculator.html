@@ -33,7 +33,7 @@
             <button value="4" onclick="ketqua.value+= this.value"> 4</button>
             <button value="5" onclick="ketqua.value+= this.value"> 5</button>
             <button value="6" onclick="ketqua.value+= this.value"> 6</button>
-            <button value="C" onclick="ketqua.value+= this.value.substr(0,ketqua.value.length-1)"> C</button>
+            <button value="C" onclick="ketqua.value= this.value.substr(0,ketqua.value.length-1)"> C</button>
 
         </th>
     </tr>
@@ -42,7 +42,7 @@
             <button value="7" onclick="ketqua.value+= this.value"> 7</button>
             <button value="8" onclick="ketqua.value+= this.value"> 8</button>
             <button value="9" onclick="ketqua.value+= this.value"> 9</button>
-            <button value="=" onclick="ketqua.value+= eva1(ketqua.value)"> =</button>
+            <button value="=" onclick="ketqua.value= eval(ketqua.value)"> =</button>
         </th>
     </tr>
      <tr>
