@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<img id="cat1" src="img/meo1.jpg" onclick="doianh1()" height="160" width="800"/><br>
+<img id="cat2" src="img/meo2.jpg" onclick="doianh2()" height="160" width="800"/><br>
+<img id="cat3" src="img/meo3.jpg" onclick="doianh3()" height="160" width="800"/><br>
+<img id="cat4" src="img/meo4.jpg" onclick="doianh4()" height="160" width="800"/><br>
+<img id="cat5" src="img/meo5.jpg" onclick="doianh5()" height="160" width="800"/><br>
+<script>
+    let name = "meo1";
+    function doianh1() {
+
+
+        if (name === "meo1") {
+            name = "gau1";
+            document.getElementById("cat1").src = "img/" + name + ".jpg";
+
+        } else if (name === "gau1") {
+            name = "khi1";
+            document.getElementById("cat1").src = "img/" + name + ".jpg";
+        } else if (name === "khi1") {
+            name = "meo1";
+            document.getElementById("cat1").src = "img/" + name + ".jpg";
+        }
+        check();
+
+
+    }let name2 = "meo2";
+    function doianh2() {
+
+
+        if(name2 ==="meo2"){
+            name2 ="gau2";
+            document.getElementById("cat2").src = "img/" +name2 +".jpg";
+
+        }else if(name2 ==="gau2"){
+            name2 = "khi2";
+            document.getElementById("cat2").src = "img/" +name2 +".jpg";
+        }else if(name2==="khi2"){
+            name2= "meo2";
+            document.getElementById("cat2").src ="img/"+name2 +".jpg";
+        }
+        check();
+    }let name3 = "meo3";
+    function doianh3() {
+
+
+        if(name3 ==="meo3"){
+            name3 ="gau3";
+            document.getElementById("cat3").src = "img/" +name3 +".jpg";
+
+        }else if(name3 ==="gau3"){
+            name3 = "khi3";
+            document.getElementById("cat3").src = "img/" +name3 +".jpg";
+        }else if(name3==="khi3"){
+            name3= "meo3";
+            document.getElementById("cat2").src ="img/"+name3 +".jpg";
+        }
+        check();
+    }let name4 = "meo4";
+    function doianh4() {
+
+
+        if(name4 ==="meo4"){
+            name4 ="gau4";
+            document.getElementById("cat4").src = "img/" +name4 +".jpg";
+
+        }else if(name4 ==="gau4"){
+            name4 = "khi4";
+            document.getElementById("cat4").src = "img/" +name4 +".jpg";
+        }else if(name4==="khi4"){
+            name4= "meo4";
+            document.getElementById("cat4").src ="img/"+name4 +".jpg";
+        }
+        check();
+
+    }let name5 = "meo5";
+    function doianh5() {
+
+
+        if(name5 ==="meo5"){
+            name5 ="gau5";
+            document.getElementById("cat5").src = "img/" +name5 +".jpg";
+
+        }else if(name5 ==="gau5"){
+            name5 = "khi5";
+            document.getElementById("cat5").src = "img/" +name5 +".jpg";
+        }else if(name4==="khi4"){
+            name4= "meo4";
+            document.getElementById("cat5").src ="img/"+name5 +".jpg";
+        }
+        check();
+    }
+    function check() {
+        if(name1===name2&&name2===name3&&name3===name4&&name4===name5){
+            alert("<3");
+        }
+
+    }
+</script>
+</body>
+</html>

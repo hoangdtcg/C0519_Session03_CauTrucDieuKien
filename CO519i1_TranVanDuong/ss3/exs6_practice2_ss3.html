@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="a"> nhap he so a
+    <input id="b"> nhap he so b
+    <p>click the button to show result</p>
+    <button id="giaipt" onclick="Giaipt()">click me</button>
+    <p id="display">result</p>
+    <script>
+        function Giaipt() {
+            let a = parseInt(document.getElementById("a").value);
+            let b = parseInt(document.getElementById("b").value);
+            let x = -b / a;
+            if (a === 0) {
+                document.getElementById("display").innerHTML = "phuong trinh vo nghiem";
+            } else
+                document.getElementById("display").innerHTML = "phuong trinh co nghiem la" + x;
+        }
+    </script>
+
+</body>
+</html>

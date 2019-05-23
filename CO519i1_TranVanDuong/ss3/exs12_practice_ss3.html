@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="SavingAccount"> Enter your saving Account
+    <input id="anualInterestRate"> Enter interest Rate
+    <p> click to show your benefit</p>
+    <button id="tinhlaisuat" onclick="tinh()">Click me</button>
+    <p id ="display">result</p>
+    <script>
+        function tinh() {
+            let Savingaccount= parseInt(document.getElementById("SavingAccount").value);
+            let anualInterestRate = parseInt(document.getElementById("anualInterestRate").value);
+            let benefit= (Savingaccount*anualInterestRate)/12/100;
+            alert(benefit);
+            let SavingaccountAfterOneMonth = benefit +Savingaccount;
+            document.getElementById("display").innerHTML = "SavingaccountAfterOneMonth is"+ SavingaccountAfterOneMonth;
+
+        }
+    </script>
+</body>
+</html>

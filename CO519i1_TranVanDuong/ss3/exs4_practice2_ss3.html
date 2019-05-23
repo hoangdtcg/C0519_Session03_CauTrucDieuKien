@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="dai"> nhap chieu dai <br>
+<input id="rong"> nhap chieu rong <br>
+<p>Click the button to show the area</p>
+<button id="area" onclick="Area()">click me</button>
+<p id="display">Result</p>
+<script>
+    function Area() {
+        let a =parseInt(document.getElementById("dai").value);
+        let b=parseInt(document.getElementById("rong").value);
+        let area = a*b;
+        document.getElementById("display").innerHTML =" the area is:" + area;
+
+    }
+</script>
+
+</body>
+</html>

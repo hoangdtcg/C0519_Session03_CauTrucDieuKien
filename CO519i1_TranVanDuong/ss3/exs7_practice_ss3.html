@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="a"> nhap he so a;
+<input id="b"> nhap he so b;
+<input id="c"> nhap he so c;
+<p>click the button to show result</p>
+<button id="giaipt" onclick="Giaipt()">click me</button>
+<p id="display"></p>
+<script>
+    let delta = b*b-4*a*c;
+
+    function Giaipt() {
+        let a= parseInt(document.getElementById("a").value);
+        let b= parseInt(document.getElementById("b").value);
+        let c= parseInt(document.getElementById("c").value);
+        if(delta<0){
+            document.getElementById("display").innerHTML = "phuong trinh vo nghiem";
+
+        }
+        else if(delta=0){
+            let x =-(b/2a);
+            document.getElementById("display").innerHTML="phuong trinh co nghiem kep la x1=x2" +x;
+
+
+        }else if(delta>0){
+            let x1= -b + Math.abs(Math.sqrt(-(b/2a))) ;
+            let x2= -b - Math.abs(Math.sqrt(-(b/2a)) ;
+            document.getElementById("display").innerHTML = "pt co 2 nghiem X1="+ x1 +"X2=" +x2;
+
+        }
+
+
+
+    }
+</script>
+
+</body>
+</html>
