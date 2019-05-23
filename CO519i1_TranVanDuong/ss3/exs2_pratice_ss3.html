@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="met">enter met
+    <h1> please enter to change met to feet</h1>
+    <button id="change" onclick="doi()">click me!</button>
+    <p id="ft">result</p>
+    <script>
+        function doi() {
+            let M = parseInt(document.getElementById("met").value);
+            let ft= M*3.2808;
+            document.getElementById("ft").innerHTML = "chieu dai tinh theo feet la: "+ft;
+
+        }
+    </script>
+
+
+
+</body>
+</html>

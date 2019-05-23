@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let testPoint = parseInt(prompt("nhap diem kiem tra"));
+    let endTestPoint = parseInt(prompt(" nhap diem cuoi ki"));
+    let midTestPoint = parseInt(prompt("nhap diem giua ki"));
+    let diemTb = (testPoint + midTestPoint * 2 + endTestPoint * 7) / 10;
+    if (diemTb > 8.5) {
+        alert("A");
+
+    }else if(7.0<diemTb){
+
+        alert("B");
+    }else  if(5.5<diemTb){
+        alert("C");
+    }else if(4.0<diemTb){
+        alert("D");
+
+    }else {
+        alert("F");
+    }
+
+</script>
+
+
+</body>
+</html>

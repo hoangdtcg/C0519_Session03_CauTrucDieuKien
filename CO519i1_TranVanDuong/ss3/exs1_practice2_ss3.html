@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input id="c"> Enter C<br>
+    <h1>Click button to change C to F</h1>
+    <button id="1" onclick="doi()">Click me</button>
+
+</div>
+<p id="2">result</p>
+
+<script>
+    function doi() {
+        let C = parseInt(document.getElementById("c").value);
+        let F = C * 9 / 5 + 32;
+
+        document.getElementById("2").innerHTML = "do F la " + F;
+
+    }
+
+
+</script>
+
+</body>
+</html>

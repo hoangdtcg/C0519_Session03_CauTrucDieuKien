@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div><input id="a" >please enter number A</div>
+    <div><input id="b" >please enter number B</div>
+    <p id="result"> click the button to show</p>
+    <div> <button type="button" onclick="check()"> click me</button></div>
+    <script>
+        function check() {
+            if(a%b===0){
+                document.getElementById("result").innerHTML = "A chia het cho B";
+            }
+            else {
+                document.getElementById("result").innerHTML = "A k chia het cho B";
+            }
+        }
+    </script>
+</body>
+</html>

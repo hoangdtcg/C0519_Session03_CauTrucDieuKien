@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="square"> nhap do dai canh;
+    <p> click on button to show area of square</p>
+    <button id="1" onclick="Area()">click me</button>
+    <p id="display">Result</p>
+<script>
+    function Area() {
+        let a = parseInt(document.getElementById("square").value);
+        let area = a*a;
+        document.getElementById("display").innerHTML = " the area is:" + area;
+
+    }
+</script>
+
+</body>
+</html>

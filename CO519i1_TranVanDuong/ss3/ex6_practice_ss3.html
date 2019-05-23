@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><input id="revenue">Revenue</div>
+<div><p>click on the button to show tip</p></div>
+
+<button id="show" onclick="tip()">Click me</button>
+    <script>
+    function tip() {
+        let revenue =parseInt(document.getElementById("revenue").value);
+        if(revenue > 5000000){
+            document.getElementById("show").innerHTML = "the tip is " + revenue*0.1;
+        }
+        else
+            document.getElementById("show").innerHTML = "the tip is" + revenue*0.05;
+
+    }
+    </script>
+
+</body>
+</html>
