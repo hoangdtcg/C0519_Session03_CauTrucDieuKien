@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai phuong trinh bac 2</title>
+</head>
+
+<body>
+        <p1> de cong thuoc duoi dang </p1><br/>
+        <p2> ax^2 + bx + c = 0</p2>
+            <script>
+                let a = parseInt(prompt("nhap").value);
+                let b = parseInt(prompt("nhap").value)
+                let c = parseInt(prompt("nhap").value)
+                let x1, x2;
+                delta = (b*b) - (4*(a*c));
+                if(delta == 0){
+                    alert("phuong trinh co nghiem kep");
+                    x1=x2 = -b/2*a;
+                }else if(delta > 0){
+                    alert("phuong trinh co 2 nghiem phan biet");
+                    x1 = (-b - Math.sqrt(delta))/(2*a);
+                    x2 = (-b + Math.sqrt(delta))/(2*a);
+                }else if((a + b + c) == 0){
+                    x1 = 1;
+                    x2 = c/a;
+                }else if((a - b + c) == 0){
+                    x1 = -1;
+                    x2 = -(c/a);
+                }else if(delta < 0){
+                    alert("phuong trinh vo nghiem");
+                }
+                document.write(a+"x^2" + b+"x" + c + "=" + "0"+"<br/>");
+                document.write("x1 la" + x1 + "<br/>");
+                document.write("x2 la" + x2);
+
+            </script>
+</body>
+</html>
