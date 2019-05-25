@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So nguyen bat ky</title>
+</head>
+<body>
+
+            <input id="number"><br/>
+            <button type="button" onclick="submit()"> Submit</button>
+
+        <script>
+            function submit() {
+                let a=parseInt(document.getElementById("number").value);
+                    if(a > 0){
+                        document.write(a + " > 0");
+                    }else if(a == 0){
+                        document.write(a + " = 0" );
+                    }else
+                        document.write(a + " < 0");
+
+            }
+        </script>
+</body>
+</html>

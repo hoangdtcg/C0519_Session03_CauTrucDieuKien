@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Puzzle</title>
+</head>
+<body>
+
+
+<img id="image3" src="songoku3.jpg" height="240" width="400" onclick="changeimage3()"/><br/>
+<img id="image2" src="songoku2.jpg" height="240" width="400" onclick="changeimage2()"/><br/>
+<img id="image1" src="songoku1.jpg" height="240" width="400" onclick="changeimage1()"/>
+
+<script>
+
+    let name = "songoku1";
+
+    function changeimage1() {
+        document.getElementById("image1").src = "songoku1";
+        if (name === "songoku1") {
+            name = "songoku2";
+        } else if (name === "songoku2") {
+            name = "songoku3";
+        } else if (name === "songoku3") {
+            name = "songoku1";
+        }
+        document.getElementById("image1").src = name + ".jpg";
+    }
+
+    let name2 = "songoku2";
+
+    function changeimage2() {
+        document.getElementById("image2").src = "songoku2";
+        if (name2 === "songoku2") {
+            name2 = "songoku3";
+        } else if (name2 === "songoku3") {
+            name2 = "songoku1";
+        } else if (name2 === "songoku1") {
+            name2 = "songoku2";
+        }
+        document.getElementById("image2").src = name2 + ".jpg";
+    }
+
+    let name3 = "songoku3";
+
+    function changeimage3() {
+        document.getElementById("image3").src = "songoku3";
+        if (name3 === "songoku3") {
+            name3 = "songoku1";
+        } else if (name3 === "songoku1") {
+            name3 = "songoku2";
+        } else if (name3 === "songoku2") {
+            name3 = "songoku3";
+        }
+        document.getElementById("image3").src = name3 + ".jpg";
+    }
+</script>
+
+
+</body>
+</html>

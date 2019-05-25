@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xep hang hoc luc hoc sinh</title>
+</head>
+<body>
+<div>
+    <input id="number1">
+    <input id="number2">
+    <button type="button" onclick="phanloai()">Submit</button>
+</div>
+<script>
+          function phanloai() {
+              let pointmid = parseInt(document.getElementById("number1").value);
+              let pointlast = parseInt(document.getElementById("number2").value);
+              let pointAverage = (pointmid + pointlast) / 2;
+              if (pointAverage > 75) {
+                  document.write(pointAverage + "hoc sinh gioi");
+              } else if (pointAverage > 60) {
+                  document.write(pointAverage + " hoc sinh kha ");
+              } else if (pointAverage > 45) {
+                  document.write(pointAverage + " hoc sinh trung binh");
+              } else {
+                  document.write(pointAverage + " hoc sinh yeu");
+              }
+          }
+</script>
+
+
+</body>
+</html>
