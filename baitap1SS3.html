@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đo cân nặng</title>
+</head>
+<body>
+          <p>ĐO CHỈ SỐ BMI</p>
+          <form>
+              <p>chieucao</p>
+              <input id="chieucao" type="number" value="chieucao"><br>
+              <p>cannang</p>
+              <input id="cannang" type="number" value="cannang"><br>
+              <button type="button" onclick="kiemtra()">kiemtra</button>
+          </form>
+          <script>
+              function kiemtra() {
+                  let a = document.getElementById("chieucao").value;
+                  let b = document.getElementById("cannang").value;
+                  let c = b/(a*a);
+                  if ( c < 18 )
+                  {
+                    alert("Thieu Can")
+                  }
+                  else if ( c < 25 )
+                  {
+                      alert("Binh Thuong")
+                  }
+                  else if ( c <30 )
+                  {
+                      alert("Thua Can")
+                  }
+                  else {
+                      alert("Ban Beo Vl")
+                  }
+
+              }
+          </script>
+</body>
+</body>
+</html>
